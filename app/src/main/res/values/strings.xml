@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">OurSingapore</string>
+
+    <string name="stars">Stars</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+
+    <string name="title_activity_main">Insert Song</string>
+    <string name="title_activity_second">Show Song</string>
+    <string name="title_activity_third">Modify Song</string>
+
+    <string name="id">ID:</string>
+    <string name="btnShowList">Show List</string>
+    <string name="btnInsert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn5Stars">Show all songs with 5 stars</string>
+    <string name="name">Name:</string>
+    <string name="hintName">Enter island name here</string>
+    <string name="description">Description:</string>
+    <string name="hintDescription">Enter description here</string>
+    <string name="square">Square Km</string>
+    <string name="hintSquare">Enter square km here</string>
+    <string name="hintID">Enter ID here</string>
+</resources>
