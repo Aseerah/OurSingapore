@@ -84,7 +84,7 @@ public class ThirdActivity extends AppCompatActivity {
                 myBuilder.setMessage("Are you sure you want to delete this island? \n" + currentIsland.getName());
                 myBuilder.setCancelable(false);
 
-                myBuilder.setNegativeButton("DELETE", new DialogInterface.OnClickListener() {
+                myBuilder.setPositiveButton("DELETE", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -100,7 +100,7 @@ public class ThirdActivity extends AppCompatActivity {
 
                     }
                 });
-                myBuilder.setPositiveButton("CANCEL", null);
+                myBuilder.setNegativeButton("CANCEL", null);
                 AlertDialog myDialog = myBuilder.create();
                 myDialog.show();
             }
@@ -115,14 +115,14 @@ public class ThirdActivity extends AppCompatActivity {
                 myBuilder.setMessage("Are you sure you want to discard the changes?");
                 myBuilder.setCancelable(false);
 
-                myBuilder.setNegativeButton("YES", new DialogInterface.OnClickListener() {
+                myBuilder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish();
                     }
                 });
 
-                myBuilder.setPositiveButton("NO",null);
+                myBuilder.setNegativeButton("NO",null);
                 AlertDialog myDialog = myBuilder.create();
                 myDialog.show();
             }

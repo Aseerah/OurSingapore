@@ -1,21 +1,30 @@
 package sg.edu.rp.c346.id20009530.oursingapore;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etName, etDescription, etSquare;
+    EditText etName, etDescription, etSquare, etId;
     Button btnInsert, btnShowList;
     RatingBar ratingbar1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         etSquare = findViewById(R.id.etSquare);
         btnInsert = findViewById(R.id.btnInsertSong);
         btnShowList = findViewById(R.id.btnShowList);
+        etId = findViewById(R.id.etID);
+
 
         ratingbar1 = (RatingBar) findViewById(R.id.ratingBar);
 
@@ -65,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 if (result != -1) {
                     Toast.makeText(MainActivity.this, "Island inserted", Toast.LENGTH_LONG).show();
                     etName.setText("");
+                    etId.setText("");
                     etDescription.setText("");
                     etSquare.setText("");
                 } else {

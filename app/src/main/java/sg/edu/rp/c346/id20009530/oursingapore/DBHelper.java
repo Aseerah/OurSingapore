@@ -163,7 +163,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return codes;
     }
 
-    public ArrayList<Island> getAllSongsByArea(int areaFilter) {
+    public ArrayList<Island> getAllIslandsByArea(int areaFilter) {
         ArrayList<Island> islandsList = new ArrayList<Island>();
 
         SQLiteDatabase db = this.getReadableDatabase();
